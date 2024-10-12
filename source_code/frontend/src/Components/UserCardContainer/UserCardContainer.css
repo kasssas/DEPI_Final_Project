@@ -1,0 +1,9 @@
+.user-card-container__title {
+  color: var(--bs-pink-600);
+}
+
+.user-card-container__clear-icon {
+  color: var(--bs-danger);
+  font-size: 25px;
+  cursor: pointer;
+}

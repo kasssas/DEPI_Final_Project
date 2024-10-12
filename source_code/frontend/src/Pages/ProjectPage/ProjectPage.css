@@ -1,0 +1,52 @@
+.project-page__back-icon i {
+  font-size: 30px;
+  color: var(--bs-pink-600);
+  cursor: pointer;
+}
+
+.project-page__title {
+  color: var(--bs-pink-200);
+  margin-top:20px;
+}
+
+.project-page__user-information {
+  color: var(--bs-pink-600);
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.project-page__update-header {
+  color: var(--bs-pink-700);
+  margin-top: 50px;
+}
+
+.project-page__update-form input, select {
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.project-page__delete-btn, .project-page__update-btn {
+  position: relative;
+}
+
+.project-page__delete-btn button , .project-page__update-btn button {
+  padding: 5px 30px;
+}
+
+.project-page__update-btn i{
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  font-size: 20px;
+  color: wheat;
+}
+
+.project-page__delete-btn i {
+  position: absolute;
+  right: 5px;
+  top: 8px;
+  font-size: 20px;
+  color: wheat;
+}

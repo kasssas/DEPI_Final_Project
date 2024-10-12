@@ -1,0 +1,50 @@
+.project-card__placeholder {
+  height: 125px;
+}
+
+.project-card__placeholder:hover {
+  cursor: progress;
+}
+
+.project-card__placeholder-title {
+  max-width: 350px;
+  height: 25px;
+  background-color: var(--bs-pink-100);
+  border-radius: 20px;
+  opacity: .3;
+  animation: project-card__placeholder-glow 2s ease-in-out infinite;
+}
+
+.project-card__placeholder-status-text {
+  width: 100px;
+  height: 15px;
+  background-color: var(--bs-pink-100);
+  border-radius: 20px;
+  opacity: .3;
+  animation: project-card__placeholder-glow 2s ease-in-out infinite;
+}
+
+.project-card__placeholder-status-content {
+  width: 150px;
+  height: 15px;
+  background-color: var(--bs-pink-100);
+  border-radius: 20px;
+  opacity: .3;
+  animation: project-card__placeholder-glow 2s ease-in-out infinite;
+}
+
+.project-card__placeholder-view-btn {
+  display: block;
+  width: 100%;
+  height: 25px;
+  background-color: var(--bs-pink-100);
+  border-radius: 20px;
+  opacity: .3;
+  animation: project-card__placeholder-glow 2s ease-in-out infinite;
+}
+
+@keyframes project-card__placeholder-glow {
+  50% {
+    opacity: .1;
+  }
+}

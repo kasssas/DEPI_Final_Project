@@ -1,0 +1,68 @@
+.user-card__placeholder {
+  height: 160px;
+}
+
+.user-card__placeholder:hover {
+  cursor: progress;
+}
+
+.user-card__placeholder-title {
+  max-width: 150px;
+  height: 25px;
+  background-color: var(--bs-pink-600);
+  border-radius: 20px;
+  opacity: .3;
+  animation: user-card__placeholder-glow 2s ease-in-out infinite;
+}
+
+.user-card__placeholder-email-icon {
+  width: 30px;
+  height: 15px;
+  background-color: var(--bs-pink-600);
+  border-radius: 20px;
+  opacity: .3;
+  animation: user-card__placeholder-glow 2s ease-in-out infinite;
+}
+
+.user-card__placeholder-email-content {
+  width: 150px;
+  height: 15px;
+  background-color: var(--bs-pink-600);
+  border-radius: 20px;
+  opacity: .3;
+  animation: user-card__placeholder-glow 2s ease-in-out infinite;
+}
+
+.user-card__placeholder-phone-icon {
+  width: 30px;
+  height: 15px;
+  background-color: var(--bs-pink-600);
+  border-radius: 20px;
+  opacity: .3;
+  animation: user-card__placeholder-glow 2s ease-in-out infinite;
+}
+
+.user-card__placeholder-phone-content {
+  width: 120px;
+  height: 15px;
+  background-color: var(--bs-pink-600);
+  border-radius: 20px;
+  opacity: .3;
+  animation: user-card__placeholder-glow 2s ease-in-out infinite;
+}
+
+.user-card__placeholder-view-btn {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: var(--bs-pink-600);
+  border-radius: 20px;
+  opacity: .3;
+  animation: user-card__placeholder-glow 2s ease-in-out infinite;
+}
+
+@keyframes user-card__placeholder-glow {
+  50% {
+    opacity: .1;
+  }
+}

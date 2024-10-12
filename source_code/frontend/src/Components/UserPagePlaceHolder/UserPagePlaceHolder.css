@@ -1,0 +1,22 @@
+.user-page__placeholder-user-info {
+  height: 60px;
+}
+
+.user-page__placeholder-user-info:hover {
+  cursor: progress;
+}
+
+.user-page__placeholder-title {
+  max-width: 350px;
+  height: 40px;
+  background-color: var(--bs-pink-600);
+  border-radius: 20px;
+  opacity: .3;
+  animation: user-page__placeholder-glow 2s ease-in-out infinite;
+}
+
+@keyframes user-page__placeholder-glow {
+  50% {
+    opacity: .1;
+  }
+}

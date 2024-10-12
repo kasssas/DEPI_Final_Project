@@ -1,0 +1,9 @@
+.project-card-container__title {
+  color: var(--bs-pink-200);
+}
+
+.project-card-container__clear-icon {
+  color: var(--bs-danger);
+  font-size: 25px;
+  cursor: pointer;
+}

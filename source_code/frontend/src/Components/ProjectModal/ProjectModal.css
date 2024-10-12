@@ -1,0 +1,33 @@
+.project-modal__btn {
+  height: 50px;
+  color: var(--bs-gray-300);
+  background-color: var(--bs-pink-200);
+}
+
+.project-modal__save-btn {
+  color: var(--bs-gray-300);
+  background-color: var(--bs-pink-200);
+  padding: 5px 25px;
+  position: relative;
+}
+
+.project-modal__save-btn i {
+  position: absolute;
+  top: 9px;
+  right: 4px;
+}
+
+.project-modal__title {
+  color: var(--bs-pink-300);
+}
+
+.project-modal__btn-icon {
+  color: var(--bs-pink-600);
+  font-size: 30px;
+  margin-right: 5px;
+  margin-bottom: 7px;
+}
+
+.project-modal__btn-text {
+  font-size: 20px;
+}

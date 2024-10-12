@@ -1,0 +1,49 @@
+.project-page__placeholder-project-info {
+  height: 250px;
+}
+
+.project-page__placeholder-project-info:hover {
+  cursor: progress;
+}
+
+.project-page__placeholder-title {
+  max-width: 350px;
+  height: 40px;
+  background-color: var(--bs-pink-300);
+  border-radius: 20px;
+  opacity: .3;
+  animation: project-page__placeholder-glow 2s ease-in-out infinite;
+}
+
+.project-page__placeholder-description {
+  max-width: 450px;
+  height: 10px;
+  background-color: var(--bs-pink-300);
+  border-radius: 20px;
+  opacity: .3;
+  animation: project-page__placeholder-glow 2s ease-in-out infinite;
+}
+
+.project-page__placeholder-status {
+  max-width: 150px;
+  height: 25px;
+  background-color: var(--bs-pink-300);
+  border-radius: 20px;
+  opacity: .3;
+  animation: project-page__placeholder-glow 2s ease-in-out infinite;
+}
+
+.project-page__placeholder-status-text {
+  max-width: 100px;
+  height: 20px;
+  background-color: var(--bs-pink-300);
+  border-radius: 20px;
+  opacity: .3;
+  animation: project-page__placeholder-glow 2s ease-in-out infinite;
+}
+
+@keyframes project-page__placeholder-glow {
+  50% {
+    opacity: .1;
+  }
+}

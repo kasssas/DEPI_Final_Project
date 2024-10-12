@@ -1,0 +1,93 @@
+- hosts: ec2
+  become: yes  # Use sudo
+  tasks:
+    - name: Update the system
+      yum:
+        name: "*"
+        state: latest
+
+    - name: Install Docker
+      yum:
+        name: docker
+        state: present
+
+    - name: Start and enable Docker service
+      service:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Add the ec2-user to the docker group
+      user:
+        name: ec2-user
+        groups: docker
+        append: yes
+
+    - name: Install pip (required for Docker Compose)
+      yum:
+        name: python3-pip
+        state: present
+
+    - name: Install Docker Compose
+      pip:
+        name: docker-compose
+
+    - name: Install AWS CLI v2
+      get_url:
+        url: "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip"
+        dest: "/tmp/awscliv2.zip"
+
+    - name: Unzip AWS CLI v2
+      unarchive:
+        src: "/tmp/awscliv2.zip"
+        dest: "/tmp"
+        remote_src: yes
+
+    - name: Install AWS CLI
+      command: "/tmp/aws/install"
+
+    - name: Install Terraform
+      get_url:
+        url: "https://releases.hashicorp.com/terraform/1.5.6/terraform_1.5.6_linux_amd64.zip"
+        dest: "/tmp/terraform.zip"
+
+    - name: Unzip Terraform
+      unarchive:
+        src: "/tmp/terraform.zip"
+        dest: "/usr/local/bin"
+        remote_src: yes
+        mode: '0755'
+
+    - name: Verify Terraform installation
+      command: terraform --version
+      register: terraform_version
+
+    - name: Show Terraform version
+      debug:
+        msg: "Terraform version: {{ terraform_version.stdout }}"
+
+    - name: Clean up temporary files
+      file:
+        path: "/tmp/awscliv2.zip"
+        state: absent
+
+    - name: Clean up Terraform zip file
+      file:
+        path: "/tmp/terraform.zip"
+        state: absent
+
+    - name: Verify Docker installation
+      command: docker --version
+      register: docker_version
+
+    - name: Show Docker version
+      debug:
+        msg: "Docker version: {{ docker_version.stdout }}"
+
+    - name: Verify AWS CLI installation
+      command: aws --version
+      register: awscli_version
+
+    - name: Show AWS CLI version
+      debug:
+        msg: "AWS CLI version: {{ awscli_version.stdout }}"

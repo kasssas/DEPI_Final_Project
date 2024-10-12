@@ -1,0 +1,33 @@
+.user-card  {
+  position: relative;
+}
+
+.user-card__delete-icon {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 20px;
+  color: var(--bs-danger);
+  cursor: pointer;
+}
+
+.user-card__title, .user-card__email-content, .user-card__phone-content {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user-card__title {
+  color: var(--bs-pink-600);
+}
+
+.user-card__email i, .user-card__phone i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: var(--bs-pink-600);
+}
+
+.user-card__view-btn {
+  background-color: var(--bs-pink-600);
+  color: var(--bs-gray-200);
+}

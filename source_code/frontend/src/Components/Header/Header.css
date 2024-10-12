@@ -1,0 +1,16 @@
+
+.header {
+  color: var(--bs-pink-300);
+  background-color: var(--bs-gray-300);
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  top: 0 !important;
+}
+.header__logo {
+  height: 60px;
+}
+.header__title {
+  font-size: 25px;
+  margin-top: 7px;
+}

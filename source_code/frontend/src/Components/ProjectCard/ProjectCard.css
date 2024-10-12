@@ -1,0 +1,28 @@
+.project-card {
+  position: relative;
+}
+
+.project-card__delete-icon {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 20px;
+  color: var(--bs-danger);
+  cursor: pointer;
+}
+
+.project-card__title {
+  color: var(--bs-pink-300);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project-card__status-text {
+  font-size: 15px;
+}
+
+.project-card__view-btn {
+  background-color: var(--bs-pink-100);
+  color: var(--bs-gray-200);
+}

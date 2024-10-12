@@ -1,0 +1,52 @@
+.user-page__back-icon i {
+  font-size: 30px;
+  color: var(--bs-pink-600);
+  cursor: pointer;
+}
+
+.user-page__title {
+  color: var(--bs-pink-500);
+  margin-top: 20px;
+}
+
+.user-page__project-header {
+  color: var(--bs-pink-200);
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.user-page__update-header {
+  color: var(--bs-pink-700);
+  margin-top: 30px;
+}
+
+.user-page__update-form input {
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.user-page__delete-btn, .user-page__update-btn {
+  position: relative;
+}
+
+.user-page__delete-btn button , .user-page__update-btn button {
+  padding: 5px 30px;
+}
+
+.user-page__update-btn i{
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  font-size: 20px;
+  color: wheat;
+}
+
+.user-page__delete-btn i {
+  position: absolute;
+  right: 5px;
+  top: 8px;
+  font-size: 20px;
+  color: wheat;
+}
