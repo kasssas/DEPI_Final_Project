@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git url: 'https://github.com/mahmoudabohelwa/Depi-project', branch: 'main'
+                git url: 'https://github.com/kasssas/DEPI_Final_Project.git', branch: 'main'
             }
         }
 
